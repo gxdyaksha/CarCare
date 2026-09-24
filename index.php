@@ -7,20 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h1>CarCare</h1>
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
-                <a href="#">Register</a>
-            </div>
-        </div>
-    </header>
-
+    
+    <?php include 'includes/header.php'; ?>
+    
     <main>
 
         <section class="hero">
@@ -82,22 +71,8 @@
             </div>
         </section>
     </main>   
-     <footer class="footer">
-    <h2>CarCare</h2>
+    
+    <?php include 'includes/footer.php';?>
 
-    <p>Your trusted partner for simple and reliable car servicing.</p>
-
-    <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Login</a>
-    </div>
-
-    <div class="copyright">
-        <p>© 2026 CarCare. All Rights Reserved.</p>
-    </div>
-</footer>
 </body>
 </html>
