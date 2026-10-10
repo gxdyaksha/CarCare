@@ -1,0 +1,107 @@
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+main h1 {
+    color: #4736ff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main > p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.car-form,
+.car-list {
+    background: #eef2ff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.car-form h2,
+.car-list h2 {
+    color: #4736ff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.car-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.car-form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.car-form input:focus {
+    outline: 2px solid #4736ff;
+    border-color: transparent;
+}
+
+.car-form button {
+    width: 100%;
+    background: #4736ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.car-form button:hover {
+    background: #3525d9;
+}
+
+.car-item {
+    background: white;
+    padding: 18px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.car-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.car-item p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    color: #166534;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .car-form,
+    .car-list {
+        padding: 18px;
+    }
+}

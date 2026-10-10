@@ -1,30 +1,128 @@
-*{
+
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Navbar*/
-
-.navbar{
-    padding:15px 20px;
-    background-color:#4736fe ;
-    color:#ffffff;
-    display:flex;
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 15px 24px;
+    background-color: #4736fe;
+    color: #ffffff;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
-.links{
-    display:flex;
-    gap:20px;
+
+/* CarCare Logo */
+.navbar a.logo,
+.navbar a.logo:link,
+.navbar a.logo:visited {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: none;
+    white-space: nowrap;
+    display: inline-block;
+    flex-shrink: 0;
+    transition: color 0.3s ease;
 }
-.links a{
-    color:#ffffff;
+
+/* Logo Hover */
+.navbar a.logo:hover,
+.navbar a.logo:active {
+    color: #ffd700 !important;
+    text-decoration: none !important;
+}
+
+/* Navigation Links */
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* All Navigation Anchors */
+.links a,
+.links a:link,
+.links a:visited {
+    color: #ffffff;
     text-decoration: none;
-    transition:transform 0.4s linear 0s;
+    font-size: 16px;
+    white-space: nowrap;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-.links a:hover{
-    color:gold;
-    transform:translateY(-2px) scale(1.2);
+
+/* Navigation Hover */
+.links a:hover,
+.links a:active {
+    color: #ffd700;
+    transform: translateY(-2px);
+}
+
+/* Logged-in User Name */
+.welcome-user {
+    color: #ffffff;
+    font-size: 14px;
+    align-self: center;
+    white-space: nowrap;
+}
+
+/* Logout Link */
+.links .logout-link,
+.links .logout-link:visited {
+    color: #ffffff;
+}
+
+/* Logout Hover */
+.links .logout-link:hover {
+    color: #ffd700;
+}
+
+/* Responsive Navbar */
+@media (max-width: 1000px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* Mobile Navbar */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .navbar a.logo {
+        font-size: 28px;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .links a {
+        font-size: 14px;
+    }
+
+    .welcome-user {
+        font-size: 13px;
+    }
 }
